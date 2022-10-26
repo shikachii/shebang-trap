@@ -1,0 +1,9 @@
+name: example shell script exec direct
+on: push
+jobs:
+  exec_direct:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/acheckout@v2
+      - name: exec shell script
+        run: ./example.sh

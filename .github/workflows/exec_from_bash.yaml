@@ -1,0 +1,9 @@
+name: example shell script exec from bash
+on: push
+jobs:
+  exec_from_bash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/acheckout@v2
+      - name: exec shell script
+        run: bash ./example.sh
